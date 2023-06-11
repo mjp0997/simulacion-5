@@ -7,9 +7,11 @@ El método de Montecarlo permite, valiéndose del manejo de números aleatorios,
 La herramienta podrá desarrollase en cualquier lenguaje de programación y/o herramienta informática que este a su alcance.
 
 **Como interfaz de entrada deberá:**
+-
 - Ingresar solamente el número de simulaciones.
 
 **Como interfaz de salida se deberá especificar:**
+-
 - Resultado matemático de la integral.
 - Resultado aproximado de la integral por el método de Montecarlo.
 - Porcentaje (%) de error entre el valor real (matemático) y el valor aproximado obtenido de la simulación.
