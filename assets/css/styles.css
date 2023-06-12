@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+html * {
+   margin: 0;
+   padding: 0;
+
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+
+   outline: none;
+   border: none;
+
+   background-color: transparent;
+}
+
+body {
+   min-height: 100vh;
+
+   padding: 50px;
+
+   display: flex;
+   flex-direction: column;
+   row-gap: 40px;
+}
+
+ul {
+   padding-left: 30px;
+}
+
+.assignment {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+}
+
+.assignment h2 {
+   margin-bottom: 10px;
+}
+
+.response {
+   flex-grow: 1;
+
+   display: flex;
+   justify-content: space-between;
+
+   width: 100%;
+
+   border-top: 1px solid black;
+   padding-top: 40px;
+}
+
+.response-col {
+   flex: 1 0 0px;
+}
+
+.data > h2 {
+   margin-bottom: 20px;
+}
+
+.results > form {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+
+.custom-input {
+   display: flex;
+
+   border: 1px solid black;
+}
+
+.custom-input > input {
+   flex: 1 0 0px;
+
+   text-align: center;
+
+   padding: 0 10px;
+}
+
+.custom-input > button {
+   border-left: 1px solid black;
+
+   padding: 15px 25px;
+
+   cursor: pointer;
+
+   transition: background-color 0.3s ease;
+}
+
+.custom-input > button:hover {
+   background-color: #d7e0ec;
+}
+
+.input-group > span {
+   display: none;
+   text-align: center;
+   color: red;
+}
+
+form.error .input-group > span {
+   display: block;
+}
+
+.print {
+   margin-top: 40px;
+   padding-top: 40px;
+   border-top: 1px solid black;
+
+   display: none;
+   flex-direction: column;
+   row-gap: 20px;
+}
+
+.print.show {
+   display: flex;
+}
+
+.print > h2 {
+   text-align: center;
+}
+
+.print-row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   padding: 0 50px;
+}

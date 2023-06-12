@@ -5,10 +5,84 @@
    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
    <title>Asignación #5. Método de Montecarlo</title>
 
-   <link rel='stylesheet' href='./assets/css/normalize.css'>
    <link rel='stylesheet' href='./assets/css/index.css'>
 </head>
 <body>
-   Hola
+   <div class='assignment'>
+      <h2>Se requiere de una aplicación que, empleando el método de Montecarlo, permita darle solución a una integral simple.</h2>
+
+      <p>El método de Montecarlo permite, valiéndose del manejo de números aleatorios, resolver problemas matemáticos simples y complejos.</p>
+
+      <p>La herramienta podrá desarrollase en cualquier lenguaje de programación y/o herramienta informática que este a su alcance.</p>
+
+      <p><b>Como interfaz de entrada deberá:</b></p>
+
+      <ul>
+         <li>Ingresar solamente el número de simulaciones.</li>
+      </ul>
+
+      <p><b>Como interfaz de entrada deberá:</b></p>
+
+      <ul>
+         <li>Resultado matemático de la integral.</li>
+         <li>Resultado aproximado de la integral por el método de Montecarlo.</li>
+         <li>Porcentaje (%) de error entre el valor real (matemático) y el valor aproximado obtenido de la simulación.</li>
+      </ul>
+   </div>
+
+   <div class='response'>
+      <div class='response-col data'>
+         <h2 class='integral'>Datos de la integral:</h2>
+
+         <ul>
+            <li>Función: <b>3x<sup>2</sup> + 2x</b></li>
+            <li>Límite superior: <b>3</b></li>
+            <li>Límite inferior: <b>2</b></li>
+            <li>Diferencial: <b>dx</b></li>
+            <li>Resultado matemático: <b>24</b></li>
+         </ul>
+      </div>
+
+      <div class='response-col results'>
+         <form id='form' class=''>
+            <h2>Ingrese la cantidad de simulaciones a llevar a cabo:</h2>
+
+            <div class='input-group'>
+               <div class='custom-input'>
+                  <input type='text' placeholder='Cantidad de simulaciones...'>
+                  <button type='submit'>Ejecutar</button>
+               </div>
+
+               <span></span>
+            </div>
+         </form>
+
+         <div class='print' id='results'>
+            <h2>Resultados:</h2>
+
+            <div class='print-row'>
+               <p>Cantidad de iteraciones:</p>
+               <b id='iterations'>20</b>
+            </div>
+
+            <div class='print-row'>
+               <p>Resultado matemático:</p>
+               <b>24</b>
+            </div>
+
+            <div class='print-row'>
+               <p>Resultado aproximado:</p>
+               <b id='aprox'>20</b>
+            </div>
+
+            <div class='print-row'>
+               <p>Porcentaje de error:</p>
+               <b id='error'>20</b>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src='./assets/js/index.js'></script>
 </body>
 </html>
