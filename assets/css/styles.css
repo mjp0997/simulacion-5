@@ -61,8 +61,23 @@ ul {
    flex: 1 0 0px;
 }
 
+.data {
+   display: flex;
+   flex-direction: column;
+}
+
 .data > h2 {
    margin-bottom: 20px;
+}
+
+.author {
+   margin-top: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.author > p:last-child {
+   align-self: flex-end;
 }
 
 .results > form {
